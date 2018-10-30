@@ -1,0 +1,55 @@
+html { 
+    background: url(../imagenes/backgroundCity.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+h1{
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 4;
+}
+
+h5{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+p{
+    font-weight: 100;
+}
+
+.profile-box{
+    width: 400px;
+    height: 480px;
+    background: rgba(0,0,0,0.4);
+    padding: 40px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.social-networks{
+    font-size: 30px;
+    letter-spacing: 3;
+}
+
+.social-networks a{
+    color: white;
+}
+
+.break-line{
+    width: 325px;
+    border-top: 1px solid white;
+    margin: 0 auto;
+}
