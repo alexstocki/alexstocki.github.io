@@ -44,6 +44,10 @@ p{
     letter-spacing: 3;
 }
 
+.social-networks a + a{
+    padding-left: 3em;
+}
+
 .social-networks a{
     color: white;
 }
