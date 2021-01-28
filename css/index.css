@@ -1,5 +1,7 @@
 html { 
-    background: url(../imagenes/backgroundCity.jpg) no-repeat center center fixed; 
+    /*background: url(../imagenes/backgroundCity.jpg) no-repeat center center fixed; */
+    background: url(../imagenes/backgroundSpace.jpg);
+    background-repeat: repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
