@@ -1,0 +1,135 @@
+html{
+    background-image: url(../images/AlexStockiBackground.jpg);
+    background-repeat: repeat;
+}
+
+html, body, #grid{
+    height: 100%;
+}
+
+#grid{
+    display: grid;
+    grid-template-areas:
+    "head   head    head"
+    "info   info    info"
+    "footer footer  footer";
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+}
+
+.head{
+    grid-area: head;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.content{
+    grid-area: info;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;    
+}
+
+a{
+    margin: 20px;
+}
+
+h1, h3, p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.h1{
+    padding-bottom: 0%;
+    color: white;
+}
+
+.profileBox{
+    width: 400px;
+    height: 480px;
+    background: rgba(0,0,0,0.4);
+    padding: 40px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 0px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.profilePicture{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+hr {
+    color: white;    
+}
+
+i{
+    color: black;
+}
+
+i:hover{
+    color: rgba(234, 237, 240, 0.815);
+}
+
+
+
+/* ----- Mobile First -----*/
+
+@media only screen and(max-width: 320px){
+    #grid{
+        display: grid;
+        grid-template-areas:
+        
+        "info"
+        "footer";
+
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 1px;
+        grid-row-gap: 1px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #grid{
+        display: grid;
+        grid-template-areas:
+        "info"
+        "footer";
+
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 1px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #grid{
+        display: grid;
+        grid-template-areas:
+        "info"
+        "footer";
+
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 1px;
+        justify-content: center;
+    }
+}
