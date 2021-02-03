@@ -74,6 +74,9 @@ h1, h3, p{
     display: flex;
     flex-direction: column;
 
+    justify-self: center;
+    align-self: center;
+
     justify-content: center;
     align-content: center;
 
