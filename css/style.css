@@ -1,21 +1,20 @@
 html{
-    background-image: linear-gradient(); /*url(../images/AlexStockiBackground.jpg);*/
-    background: linear-gradient(#A9D6E5, #89C2D9, #61A5C2, #468FAF, #2C7DA0, #2A6F97, #014F86, #01497C, #013A63, #012A4A);
+    background-image: url(../images/AlexStockiBackground.jpg);
 }
 
 html, body, #grid{
     height: 100%;
+    justify-content: center;
 }
 
 #grid{
     display: grid;
     grid-template-areas:
-    "head   head    head"
     "info   info    info"
     "footer footer  footer";
 
     grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-column-gap: 1px;
     grid-row-gap: 1px;
 }
@@ -68,14 +67,22 @@ h1, h3, p{
 .h1{
     padding-bottom: 0%;
     color: white;
+    
+    animation: userName 2s;
+}
+
+@keyframes userName{
+    0%{
+        letter-spacing: -10px;
+    }
+    100%{
+        letter-spacing: normal;
+    }
 }
 
 .profileBox{
     display: flex;
     flex-direction: column;
-
-    justify-self: center;
-    align-self: center;
 
     justify-content: center;
     align-content: center;
@@ -111,7 +118,7 @@ i{
 
 i:hover{
     color: rgba(234, 237, 240, 0.815);
-    font-size: 70px;
+    font-size: 50px;
 }
 
 
